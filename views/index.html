@@ -18,11 +18,30 @@
 
       <!-- display tweets here -->
       <!--var tweets = paramObj[tweets]-->
+      <!-- our tweets = each value in the array data-->
       {% for tweet in tweets %}
-        <li>{{tweet.content}}</li>
+        <li><a href="/users/{{tweet.name}}">{{tweet.name}}</a> - {{tweet.content}}</li>
       {% endfor %}
+
 
     </div>
   </div>
+
+
+
+
+  {% if showForm %}
+  <form action="/tweets" method="POST">
+    <label for="name_field">Name:</label>
+    <input name="name" type="text" id="name_field" />
+
+    <label for="text_field">Text:</label>
+    <input name="text" type="text" id="text_field" style="width: 350px;" />
+
+    <input type="submit" value="Submit" />
+  </form>
+{% endif %}
+
+
 
 {% endblock %}

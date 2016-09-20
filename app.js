@@ -7,8 +7,8 @@ var nunjucks = require('nunjucks');
 var routes = require('./routes');
 app.use('/',routes);
 
-
 var tweetBank = require('./tweetBank');
+//var parser = require('body-parser');
 
 
 
@@ -37,18 +37,6 @@ app.get('/stylesheets/style.css');
 app.listen(3000, function() {
     console.log('I ran');
 });
-
-//---------------------------------
-// var locals = {
-//     title: 'An Example',
-//     people: [{
-//         name: 'Gandalf'
-//     }, {
-//         name: 'Frodo'
-//     }, {
-//         name: 'Hermione'
-//     }]
-// };
 
 nunjucks.configure('views', {
     noCache: true
