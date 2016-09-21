@@ -46,9 +46,3 @@ var getFakeTweet = function() {
 for (var i = 0; i < 10; i++) {
   module.exports.add( getFakeName(), getFakeTweet() );
 }
-  module.exports.add( "dril", "IF THE ZOO BANS ME FOR HOLLERING AT THE ANIMALS I WILL FACE GOD AND WALK BACKWARDS INTO HELL");
-  module.exports.add( "dril", "KFC is making BIRDS and LUNCH 10954 patrons $545060 a month");
-
-// module.exports(data);
-
- //console.log(data);
